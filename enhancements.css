@@ -1,0 +1,106 @@
+/* ================================
+   Polished & Modern Enhancements
+   ================================ */
+
+/* Smooth transitions for all UI elements */
+* {
+  transition: all 0.25s ease;
+}
+
+/* Header slight gradient */
+.site-header {
+  background: linear-gradient(90deg, #002855, #003b74);
+}
+
+/* Slight shadow + rounded corners to main content cards */
+.section,
+.profile-card {
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+/* Hover effect - lift card slightly */
+.section:hover,
+.profile-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Navigation hover improvements */
+.main-nav a {
+  padding: 0.4rem 0.75rem;
+}
+
+.main-nav a:hover {
+  background-color: #fbc02d;
+  color: #002855;
+}
+
+/* PDF link icon */
+.project-card a::before {
+  content: "📄 ";
+  font-size: 1.1rem;
+}
+
+/* Hover state for PDF links */
+.project-card a:hover {
+  color: #0056a6;
+  text-decoration: underline;
+}
+
+/* Improve spacing in UL lists */
+.section ul li {
+  margin-bottom: 0.45rem;
+  line-height: 1.5;
+}
+
+/* Improve page headers */
+.page-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.page-header p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Profile card styling enhancements */
+.profile-card img {
+  border: 4px solid #f4b41a;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card {
+  padding-top: 2rem;
+}
+
+/* Footer improvements */
+.site-footer {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.site-footer .wrapper {
+  justify-content: space-between;
+}
+
+/* Mobile adjustments */
+@media (max-width: 800px) {
+  .profile-card img {
+    max-width: 200px;
+  }
+
+  .main-nav ul {
+    gap: 0.4rem;
+  }
+
+  .section {
+    padding: 1rem 1.25rem;
+  }
+
+  .page-header h2 {
+    font-size: 1.6rem;
+  }
+}
